@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx", /* Recommended for React 18/19+ */
+
+    /* Modules */
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "allowImportingTsExtensions": false, /* Set to true only if using specialized loaders */
+
+    /* JavaScript Support */
+    "allowJs": true,
+    "checkJs": false,
+
+    /* Emit */
+    "noEmit": true, /* Let Babel/Webpack handle the emit, not tsc */
+    "sourceMap": true,
+
+    /* Interop Constraints */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true, /* Required for Babel/Webpack loaders */
+
+    /* Type Checking */
+    "strict": true,
+    "skipLibCheck": true /* Speeds up build by skipping node_modules checks */
+  },
+  "include": [
+    "src/**/*",
+    "src/declarations.d.ts",
+    "src/**/*.tsx",
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
